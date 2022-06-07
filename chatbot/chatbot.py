@@ -60,7 +60,7 @@ def choice(message):
 
         # Приветствие
         bot.send_message(message.chat.id,
-                         "Добро пожаловать, {0.first_name}!\nЯ - <b>{1.first_name}</b>, тестовый бот.".format(
+                         "Добро пожаловать, {0.first_name}!\nЯ - <b>{1.first_name}</b>, Если у вас нет друга-киномана или он есть, но прочитал сообщение и не ответил, то взгляните на телеграм-бота, который порекомендует годный фильм по вашим предпочтениям.".format(
                              message.from_user, bot.get_me()),
                          parse_mode='html', reply_markup=markup)
         question = 'Что хочешь посмотреть?'
